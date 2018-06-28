@@ -8,4 +8,4 @@ rm -rf ${RESULTS_DIR}
 docker run -it --rm -v ${CONF_DIR}:/opt/gatling/conf \
   -v ${USER_DIR}:/opt/gatling/user-files \
   -v ${RESULTS_DIR}:/opt/gatling/results \
-  denvazh/gatling -s basicsimulation
+  denvazh/gatling -s naiveuser.BasicSimulation -m
